@@ -4,7 +4,7 @@ This is the plugin registry containing an index of plugin versions and associate
 
 ## Packages
 
-The [packages](/packages) directory contains JSON files for each available plugin. Each file indicates which versions have been published for the plugin and meta data such as archive checksums.
+The [packages](/packages) directory contains JSON files for each available plugin. Each file indicates which versions have been published and stores meta data such as archive checksums.
 
 Packages are stored by fully qualified plugin name, eg: `std::core.json`.
 
