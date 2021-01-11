@@ -10,13 +10,13 @@ Packages are stored by fully qualified plugin name, eg: `std::core.json`.
 
 ## Downloads
 
-The [downloads](/downloads) directory is used to cache downloaded archives. When a plugin is first downloaded the archive is put in the downloads directory and subsequent attempts to install that version of the plugin will be resolved from the downloads to prevent an additional download.
+The downloads directory is used to cache downloaded archives. When a plugin is first downloaded the archive is put in the downloads directory and subsequent attempts to install that version of the plugin will be resolved from the downloads to prevent additional network traffic and to support working offline.
 
 Downloads are stored using the fully qualified plugin name and the version, eg: `std::core::4.1.12.tar.xz`.
 
 ## Repositories
 
-The [repositories](/repositories) directory is used to cache plugins installed using `git`. Each repository will be installed using an opaque identifier for the repository which is the `SHA3-256` digest of the URL used to clone the repository.
+The repositories directory is used to cache plugins installed using `git`; each repository is installed using an opaque identifier for the repository which is the `SHA3-256` digest of the URL used to clone the repository.
 
 During installation if a repository is already cloned then the program will perform a `fetch` operation to update the local repository.
 
