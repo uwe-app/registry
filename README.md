@@ -20,4 +20,8 @@ The repositories directory is used to cache plugins installed using `git`; each 
 
 During installation if a repository is already cloned then the program will perform a `fetch` operation to update the local repository.
 
+## Archives
+
+The archives directory is where plugins installed from archives are extracted to; the folder name for the extracted plugin is an opaque identifier generated from the file system path (`SHA3-256`).
+
 [plugins]: https://github.com/uwe-app/plugins
